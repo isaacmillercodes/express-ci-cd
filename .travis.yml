@@ -2,6 +2,16 @@ language:
 - node_js
 node_js:
 - '6'
+- '5'
 env:
   global:
   - NODE_ENV=test
+deploy:
+  provider: heroku
+  api_key:
+    secure: JmnWT+di8gvOnOCK7ECbaVR3dgyeK9ZDQ3AOH862+m57vDHFNPPA6Z3HJ/j7sMoIYb4hSCEbv5FjXlfxvVuwkbn/AG37TuCdgt/mvWGML/kHQySdE3KED7ui/KU4dJPY4BUi25g0zlSaQJ2QzfJq38u/wcOTmwm/B6owA8V78Fk8EYP5+39YgHE7uJYMbGAd+xuU5ZMn1T36oA4i8EuXCXOF70bTXxB4g0rLvj5bBsUASo+rdaA6pKRm17snYrwXWzIS+jKv7LkvZbdjLXU8TWKeb5lbAQ3CXB05s5HBKtmTepkUfY7FiOrioh44i06w82C5BtlvCKpCVICyOc8V84b0fTka7qcc1tOjk9IrXn0vRi5WRAmOABy+ZHyr3aSGJzIEWX0vX5uz43rUyDYV6z7bg2YpMhyptXPo1uq5wCzS90/eDW1CasB2X94jcOv5risPsuqwefAR43MnvtkBW+rGZ1AQ7VfR0OyD2gBcx3J/J7w/rex9ucUQyzB9F9zlPVngvN+f4NDVKILlWGJxNLY8tTeJH11b9d9ff3G7/DcwopF+EtUkgs/uRPos//41bqdEQszasNWH6lc2vOgYhHL7T4lGoAZtbRPmzZP2ZkoZt1LCTheYCCvw2xD0pZtfwyfbVbLR5RUxnKEkcEbXfWIFeGYTpmnvAHp+fg1i9Tw=
+  app: fathomless-bayou-33133
+  on:
+    repo: isaacmillercodes/express-ci-cd
+    branch: master
+    node: '6'
